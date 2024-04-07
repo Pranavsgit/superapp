@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Single+Day&display=swap");
 
-body {
-  color: white;
-  font-family: "DM Sans", sans-serif;
-}
-
 .page {
+  font-family: "DM Sans", sans-serif;
   display: flex;
-  height: 100vh;
-  height: 100vw;
+  color: white;
+  overflow: hidden;
   background-color: black;
+  height: 100vh;
+  width: 100vw;
 }
 .left {
   display: flex;
@@ -31,6 +29,20 @@ body {
   height: 100%;
   width: 100%;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40%;
+}
+.leftHeader {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 2%;
+  left: 5%;
+}
 h2 {
   font-size: 3.4rem;
   font-family: "Single Day", cursive;
@@ -41,22 +53,33 @@ input[type="email"],
 input[type="tel"],
 input[type="password"] {
   all: unset;
-  width: 100%;
-  background-color: rgba(41, 41, 41, 1);
-  padding: 5px 10px;
+  padding: 10px;
+  margin: 0% 25%;
+  width: 50%;
+  border-radius: 3px;
+  color: #7c7c7c;
+  background-color: #292929;
 }
-button {
+.submit {
   all: unset;
-  width: 100%;
-  background-color: rgba(114, 219, 115, 1);
-  border-radius: 15px;
+  padding: 10px;
+  margin: 0% 25%;
+  width: 50%;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #72db73;
+  text-align: center;
+}
+.checkbox {
+  margin-left: 13.5%;
 }
 span {
   cursor: pointer;
   color: rgba(114, 219, 115, 1);
 }
-.footer {
-  margin-top: 20px;
-
-  width: 50%;
+p {
+  margin: 0px 25%;
+}
+label {
+  color: #7c7c7c;
 }
